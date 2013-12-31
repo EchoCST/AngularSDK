@@ -1,0 +1,18 @@
+.container { border: 1px solid #999; }
+
+.echo-stream-item {
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0 0 14px 0;
+    padding: 0 0 14px 0;
+    border-bottom: 1px dotted #999;
+
+    .avatar { float: left; margin-right: -58px; }
+    .inner { float: left; margin-left: 58px; }
+    .author { font: bold 15px sans-serif; color: #476cb8; }
+}
+
+/* Clearfix */
+.echo-stream-item:before,
+.echo-stream-item:after { content: " "; display: table; }
+.echo-stream-item:after { clear: both; }

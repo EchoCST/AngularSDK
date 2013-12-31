@@ -1,0 +1,11 @@
+<h2>Echo Stream Demo in Angular</h2>
+<div class="echo-stream" data-ng-repeat="item in stream.entries">
+  <div class="echo-stream-item">
+      <img src="{{ item.actor.avatar }}" class="avatar" />
+      <div class="inner">
+          <div class="author">{{ item.actor.title }}</div>
+          <div class="content" ng-bind-html="item.object.content"></div>
+          <div class="date">{{ item.postedTime | date:'medium' }}</div>
+      </div>
+  </div>
+</div>
